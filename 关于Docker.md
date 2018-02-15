@@ -31,12 +31,16 @@ Docker 利用容器（Container）来运行应用。容器是从镜像创建的�
  ![](http://wx4.sinaimg.cn/mw690/006AGGiwgy1foghe5la23j313003p0t5.jpg) 
  3. 运行镜像创建名为redis 0的容器并映射默认端口(redis是6379) 
  
+ 
  ![](http://wx3.sinaimg.cn/mw690/006AGGiwgy1foghy4h9aqj30ym01v0sv.jpg)
  4. 可以用redis desktop manager检测一下 连接成功~
+ 
  ![](http://wx4.sinaimg.cn/mw690/006AGGiwgy1fogheajrfoj30xg13dq5p.jpg)
  5. 这时候查看运行状况
  
  ![](http://wx1.sinaimg.cn/mw690/006AGGiwgy1foghedriu4j31he04m0t7.jpg)
+ 
+ 
  可以看到2min 前创建并运行了1min。
 
 当然还有一些基本命令我就不介绍了，这给了中文版的官方介绍https://docs.docker-cn.com/get-started/。
