@@ -24,17 +24,19 @@ Docker 利用容器（Container）来运行应用。容器是从镜像创建的�
 ### 基本命令(CLI)
 ![](http://wx3.sinaimg.cn/mw690/006AGGiwgy1foghe2hclbj30xw098q7a.jpg)
 #### 示范
- *  以redis为例用pull拉取镜像
-  ![](http://wx2.sinaimg.cn/mw690/006AGGiwgy1foghe7tzxgj311l09zwfp.jpg)
-  
+ 1. 以redis为例用pull拉取镜像
+ ![](http://wx2.sinaimg.cn/mw690/006AGGiwgy1foghe7tzxgj311l09zwfp.jpg)
   *(Ps:由于国外的镜像pull公认的特别慢 可以在阿里，腾讯，Daocloud 上获取免费的Docker加速器。 我第一次pull时，40M的镜像我傻等了20分钟...)*
- * 查看自己的镜像
-   ![](http://wx4.sinaimg.cn/mw690/006AGGiwgy1foghe5la23j313003p0t5.jpg)
- * 运行镜像创建名为redis 0的容器并映射默认端口(redis是6379) 
-   ![](http://wx3.sinaimg.cn/mw690/006AGGiwgy1foghy4h9aqj30ym01v0sv.jpg)
- * 可以用redis desktop manager检测一下 连接成功~
+ 2. 查看自己的镜像
+ ![](http://wx4.sinaimg.cn/mw690/006AGGiwgy1foghe5la23j313003p0t5.jpg)
+ 
+ 3. 运行镜像创建名为redis 0的容器并映射默认端口(redis是6379) 
+ ![](http://wx3.sinaimg.cn/mw690/006AGGiwgy1foghy4h9aqj30ym01v0sv.jpg)
+ 
+ 4. 可以用redis desktop manager检测一下 连接成功~
  ![](http://wx4.sinaimg.cn/mw690/006AGGiwgy1fogheajrfoj30xg13dq5p.jpg)
- * 这时候查看运行状况
+ 
+ 5. 这时候查看运行状况
  ![](http://wx1.sinaimg.cn/mw690/006AGGiwgy1foghedriu4j31he04m0t7.jpg)
  可以看到2min 前创建并运行了1min。
 
