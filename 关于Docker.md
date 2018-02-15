@@ -55,7 +55,7 @@ Docker 利用容器（Container）来运行应用。容器是从镜像创建的�
 
 ![](http://wx3.sinaimg.cn/mw690/006AGGiwgy1fogkqr7807j30jm0cme3d.jpg)
 
-###在Mysql下挂载Host Volume
+### 在Mysql下挂载Host Volume
 
 #### **环境的部署**
 1 .拉取mysql镜像
