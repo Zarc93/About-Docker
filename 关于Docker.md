@@ -4,10 +4,11 @@
 ![](https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D0%2C156%2C1354%2C894%3Bc0%3Dbaike180%2C5%2C5%2C180%2C60/sign=c97c7c9b9b13b07ea9f20a4831e7bd12/f703738da977391281957edbf0198618377ae2dd.jpg)
 ### 简介 (introduction)
  Docker运用的是集装箱的思想，将各个应用分别封装在容器中，相互隔离。比如.net开发网站和php开发网站依赖的软件不同，将它们放一个服务器上调试就很麻烦，还可能造成端口访问冲突等问题。就好比动物园里的动物需要生活在不同的环境一样。docker实现了虚拟机隔离应用环境的功能，开销也比虚拟机小，内存利用率自然提高。同时，它的轻量性和兼容性也让使用者能进行高效的部署。
-#####**传统虚拟方式**              
+#### **传统虚拟方式**              
  ![](http://hainiubl.com/images/2016/virtualization.png)
-#####**容器虚拟方式** 
+#### **容器虚拟方式** 
  ![](http://hainiubl.com/images/2016/docker.png)
+ 
 **比较可以看出docker engine管理的容器是在操作系统上实现虚拟化，而传统虚拟是在硬件层上实现的。**
 ###  安装(Install)
  Docker可以下载到linux,centos,ubuntus和windows环境，官方的教程很详细，就不介绍了。**值得一提**，如果是windows的话，要注意Docker for windows 是只支持win10e版和p版的，如果你是家庭版，可以去网上 搜索升级专业版的产品密钥，但如果你不知道升级后如何激活系统的话，建议下载Docker toolbox。*（Ps:不是很推荐toolbox，因为网友吐槽不怎么稳定）*
@@ -20,9 +21,9 @@
 * **容器（container）**
 Docker 利用容器（Container）来运行应用。容器是从镜像创建的运行实例。它可以被启动、开始、停止、删除。每个容器都是相互隔离的、保证安全的平台
 
-###基本命令(CLI)
+### 基本命令(CLI)
 ![](http://wx3.sinaimg.cn/mw690/006AGGiwgy1foghe2hclbj30xw098q7a.jpg)
-####示范
+#### 示范
  *  以redis为例用pull拉取镜像
   ![](http://wx2.sinaimg.cn/mw690/006AGGiwgy1foghe7tzxgj311l09zwfp.jpg)
   *(Ps:由于国外的镜像pull公认的特别慢 可以在阿里，腾讯，Daocloud 上获取免费的Docker加速器。 我第一次pull时，40M的镜像我傻等了20分钟...)*
@@ -38,7 +39,7 @@ Docker 利用容器（Container）来运行应用。容器是从镜像创建的�
 
 当然还有一些基本命令我就不介绍了，这给了中文版的官方介绍https://docs.docker-cn.com/get-started/。
 
-###数据卷（Data Volume）
+### 数据卷（Data Volume）
 ![](http://wx4.sinaimg.cn/mw690/006AGGiwgy1fogkb9q5esj318g0tnwf8.jpg)
 
 * 什么是数据卷？
@@ -57,7 +58,7 @@ Docker 利用容器（Container）来运行应用。容器是从镜像创建的�
 
 ###在Mysql下挂载Host Volume
 
-####**环境的部署**
+#### **环境的部署**
 1 .拉取mysql镜像
 ```
 docker pull mysql/mysql-server`
@@ -159,7 +160,7 @@ Ok 接着Esc退出模式 shift+: 输入wq 保存退出vim
 环境的部署都可以在官网找到 比如Mysql的https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/
 你也可以试试部署Mongo 
 
-####**挂载数据卷**
+#### **挂载数据卷**
 1. 创建数据卷有两种形式mount 和 volume
 mount 更倾向于 集群（新版本也可以单机） ，volume 适用于单机 （*PS：现在用的不是很多。*）
 (接下来我使用Putty在腾讯云的centos上操作 ，windows不造出了什么问题...)
