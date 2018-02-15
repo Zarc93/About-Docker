@@ -26,6 +26,7 @@ Docker 利用容器（Container）来运行应用。容器是从镜像创建的�
 #### 示范
  *  以redis为例用pull拉取镜像
   ![](http://wx2.sinaimg.cn/mw690/006AGGiwgy1foghe7tzxgj311l09zwfp.jpg)
+  
   *(Ps:由于国外的镜像pull公认的特别慢 可以在阿里，腾讯，Daocloud 上获取免费的Docker加速器。 我第一次pull时，40M的镜像我傻等了20分钟...)*
  * 查看自己的镜像
    ![](http://wx4.sinaimg.cn/mw690/006AGGiwgy1foghe5la23j313003p0t5.jpg)
