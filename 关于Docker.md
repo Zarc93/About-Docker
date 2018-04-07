@@ -149,9 +149,8 @@ default-character-set=utf8
 ```
 Ok 接着Esc退出模式 shift+: 输入wq 保存退出vim
 这时cat一下，可以看到修改的配置
-这时候重启mysql就行了
+这时候重启mysql就行了。<br />
 7. 每次这样手动配置都很麻烦，但官方给了环境配置的方法，可以在创建容器时，直接完成一系列操作。
-
 ```
  docker run -d -p 3306:3306 -e"MYSQL_USER=Zarc" -e"MYSQL_PASSWORD=pwd123456" -e"MYSQL_ROOT_PASSWORD=password123" -e "MYSQL_RANDOM_ROOT_PASSWORD=true" --name mysql01 mysql/mysql-server --character-set-server=utf8 --collation-server=utf8_general_ci
 备注： 当这个MYSQL_RANDOM_ROOT_PASSWORD 为true 时 为root用户设置密码是没有作用的还是会生成随机的密码，设置为false 或者不加这个环境变量 
